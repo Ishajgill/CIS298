@@ -1,0 +1,5 @@
+print("Name:Edwin ")
+print("Major:Computer Science")
+print("Hobbies:Surfing,       ")
+print("Fun fact about me:")
+print("Coolest thing I have seen about technology:")
