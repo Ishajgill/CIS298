@@ -1,6 +1,6 @@
 import math
 import random
-import matplotlib.pyplot as py
+
 print(f'Isha Gill has {len('Isha Gill')} letters')
 print(f'square_root of 2 is {math.sqrt(2):.3f}')
 print(random.randint(1,10))
