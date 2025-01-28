@@ -74,3 +74,7 @@ print("Tax owed at 37% rate: $", tax_bracket_37)
 # Total tax owed
 total_tax_owed = tax_bracket_10 + tax_bracket_12 + tax_bracket_22 + tax_bracket_24 + tax_bracket_32 + tax_bracket_37
 print("Total tax owed for year 2024: $", total_tax_owed)
+# Percentage of my income
+# looked up in copilot AI how to round to 2 digits for float for formatted string
+print(f"Percentage of income calculated in taxes on gross income: {(total_tax_owed/gross_income * 100):.2f} %")
+print(f"Percentage of income calculated in taxes on adjusted income: {(total_tax_owed/adjusted_income * 100):.2f} %")
