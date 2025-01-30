@@ -1,4 +1,4 @@
-#  how to inherit file
+
 import pandas as pd
 columns_to_read = ['Year', 'S&P 500', 'US T. Bond (10-year)']
 
