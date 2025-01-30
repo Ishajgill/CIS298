@@ -1,0 +1,28 @@
+// Select the button and the output div
+const fetchDataButton = document.getElementById("fetch-data");
+const outputDiv = document.getElementById("data-output");
+
+// Add an event listener to the button
+fetchDataButton.addEventListener("click", () => {
+    // Fetch data from the Flask API
+    fetch("/api/data")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json(); // Convert response to JSON
+        })
+        .then(data => {
+            // Display the data in the output div
+            outputDiv.innerHTML = `
+                <p>${data.message}</p>
+                <ul>
+                    ${data.data.map(item => `<li>${item}</li>`).join("")}
+                </ul>
+            `;
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+            outputDiv.innerHTML = `<p style="color: red;">Failed to fetch data</p>`;
+        });
+});
