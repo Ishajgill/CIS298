@@ -45,8 +45,24 @@ final_cash = initial_cash + cash_contribution * years * 12  # Cash stays constan
 final_stocks = calculate_future_value_monthly(initial_cash, cash_contribution, average_stock_return, years)
 final_bonds = calculate_future_value_monthly(initial_cash, cash_contribution, average_bond_return, years)
 final_savings = calculate_future_value_monthly(initial_savings,savings_contribution,SAVINGS_RATE,years)
+total_in_hand = final_savings + final_cash + final_bonds + final_stocks
 print(f"Total cash after {years} years: ${final_cash:.2f}")
 print(f"Total stocks after {years} years: ${final_stocks:.2f}")
 print(f"Total bonds after {years} years: ${final_bonds:.2f}")
-print(f"Total money you will have in hand after retirement: ${(final_savings + final_cash + final_bonds + final_stocks):.2f}")
+print(f"Total money you will have in hand after retirement: ${total_in_hand:.2f}")
 
+
+# looked up how to convert results to dataframe and write into a csv file on Google AI
+results = {
+    'Category': ['Cash', 'Stocks', 'Bonds', 'Savings', 'Total'],
+    'Amount': [final_cash, final_stocks, final_bonds, final_savings, total_in_hand]
+}
+
+# Create a DataFrame from the dictionary
+results_df = pd.DataFrame(results)
+
+# Write the results to a CSV file
+output_file_path = 'retirement_projections.csv'
+results_df.to_csv(output_file_path, index=False)
+
+print(f"Results written to {output_file_path}")
