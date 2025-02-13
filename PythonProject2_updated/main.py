@@ -1,15 +1,19 @@
 import pandas as pd
 
-# columns_to_read = ['Year', 'S&P 500', 'US T. Bond (10-year)']
+# Read and clean data
+columns_to_read = ['Year', 'S&P 500', 'US T. Bond (10-year)']
 file_path = 'BondsAndStocksAnnualReturn.csv'
 data = pd.read_csv(file_path)
-# had issue with reading the data because of % ,looked up how to clean the data on Google AI
-# Clean the column names by stripping any leading/trailing spaces
+
 data.columns = data.columns.str.strip()
 data['S&P 500'] = data['S&P 500'].str.rstrip('%').astype('float') / 100
 data['US T. Bond (10-year)'] = data['US T. Bond (10-year)'].str.rstrip('%').astype('float') / 100
 
+average_stock_return = data['S&P 500'].mean()
+average_bond_return = data['US T. Bond (10-year)'].mean()
+
 print("Retirement Calculator")
+
 def get_input(prompt):
     return input(prompt)
 
@@ -30,24 +34,11 @@ stocks = initial_stocks
 bonds = initial_bonds
 
 yearly_cash, yearly_savings, yearly_stocks, yearly_bonds = [], [], [], []
-start_year = int(get_input("Enter the starting year for retirement planning: "))
-# used copilot AI do the check for years between max and min given data
-if start_year < data['Year'].min() or start_year > data['Year'].max():
-    print(f"Year out of range. Please choose a year between {data['Year'].min()} and {data['Year'].max()}.")
-    exit()
 
-for i in range(years):
-    current_year = start_year + i
-    # Get returns for the current year
-    row = data[data['Year'] == current_year]
-    # looked up how to read the data from a particular row corresponding to the column variable
-    stock_return = row.iloc[0]['S&P 500']
-    bond_return = row.iloc[0]['US T. Bond (10-year)']
+for year in range(1, years + 1):
+    print(f"Now you are {age + year}.")
 
-    print(f"\nYear {current_year}:")
-    print(f"Stock Return: {stock_return:.2%}, Bond Return: {bond_return:.2%}")
-
-
+    # Reset contributions each year
     stocks_contribution = 0
     cash_contribution = 0
     bonds_contribution = 0
@@ -66,14 +57,16 @@ for i in range(years):
             savings_contribution = float(get_input("How much do you want to add to savings this year? "))
         elif choice == 'done':
             break
+
+    # Apply contributions for this year only
     cash += cash_contribution
     savings += savings_contribution
-    stocks += stocks_contribution
-    bonds += bonds_contribution
-    # Apply contributions for this year
+    # Apply growth
     savings += savings * SAVINGS_RATE
-    stocks += stocks * stock_return
-    bonds += bonds * bond_return
+    stocks += stocks_contribution
+    stocks += stocks * average_stock_return
+    bonds += bonds_contribution
+    bonds += bonds * average_bond_return
 
     # Store yearly balances
     yearly_cash.append(cash)
@@ -91,7 +84,7 @@ print(f"Total money you will have in hand after retirement: ${total_in_hand:.2f}
 inflation_rate = 0.02
 inflation_adjusted_total = total_in_hand / ((1 + inflation_rate) ** years)
 print(f"Total money after adjusting for inflation: ${inflation_adjusted_total:.2f}")
-# looked up on co pilot Ai how to write to a csv file, create a data frame
+
 # Write results to CSV
 results = {
     'Year': list(range(1, len(yearly_cash) + 1)),
@@ -103,3 +96,5 @@ results = {
 results_df = pd.DataFrame(results)
 output_file_path = 'yearly_balances.csv'
 results_df.to_csv(output_file_path, index=False)
+
+print(f"Yearly results written to {output_file_path}")
