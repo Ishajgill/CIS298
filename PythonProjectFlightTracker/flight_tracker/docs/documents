@@ -1,0 +1,58 @@
+Flight Tracking App Development Summary
+
+Date: February 16, 2025
+
+1. **Project Setup:**
+   - Created a Django project named `flight_tracker`.
+   - Created a Django app named `flightapp`.
+   - Registered `flightapp` in `settings.py` under `INSTALLED_APPS`.
+   - Configured `urls.py` to route requests to `flightapp.urls`.
+
+2. **Django Home View:**
+   - Created a `home` view in `flightapp/views.py`.
+   - Displayed a simple message on the homepage.
+
+3. **HTML Templates:**
+   - Created `templates/flightapp/home.html`.
+   - Integrated Django template language for dynamic content.
+   - Built a search form with fields for Departure Airport, Arrival Airport, Flight Number, and Airline.
+
+4. **API Integration (AviationStack API):**
+   - Registered at `https://aviationstack.com/` for a free API key.
+   - Integrated `requests` library to fetch flight data based on user input.
+   - Handled JSON response and displayed search results on the homepage.
+
+5. **Saving Search Queries to Database:**
+   - Created a `Search` model in `flightapp/models.py` with fields:
+     - Departure
+     - Arrival
+     - Flight Number
+     - Airline
+     - Timestamp (`searched_at`)
+   - Ran `makemigrations` and `migrate` to create the `Search` table.
+   - Saved user searches in the database after every search.
+   - Displayed the 5 most recent searches below search results.
+
+6. **TailwindCSS Integration:**
+   - Used TailwindCSS via CDN in `home.html` for modern styling.
+   - Styled the search form, search results, and recent searches.
+   - Added a header with a title and a description.
+   - Styled search results and recent searches using cards, colors, and spacing.
+
+7. **Terminal Commands Used:**
+   - `django-admin startproject flight_tracker`
+   - `python manage.py startapp flightapp`
+   - `python manage.py makemigrations`
+   - `python manage.py migrate`
+   - `python manage.py runserver`
+
+8. **Key Takeaways:**
+   - Built a functional flight search app with data fetched from an external API.
+   - Saved user searches into a database and displayed recent searches.
+   - Styled the application with TailwindCSS for a modern, user-friendly look.
+
+Next Steps:
+- Implement Plotly map visualization for flight tracking.
+- Add live updates (AJAX) for real-time tracking.
+- Enhance UI further with more Tailwind components.
+

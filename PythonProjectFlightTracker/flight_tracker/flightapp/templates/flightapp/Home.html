@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Tracking App - Search Flights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <div class="bg-blue-600 text-white p-4 shadow-md">
+        <h1 class="text-3xl font-bold">✈️ Flight Tracking App</h1>
+        <p class="text-sm">Track flights and view recent searches.</p>
+    </div>
+
+    <div class="container mx-auto max-w-4xl mt-8">
+
+        <!-- Search Form -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">🔍 Search for Flights</h2>
+            <form method="GET" action="{% url 'home' %}" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="departure" placeholder="Departure Airport (IATA)" class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" name="arrival" placeholder="Arrival Airport (IATA)" class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" name="flight_number" placeholder="Flight Number (Optional)" class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" name="airline" placeholder="Airline Name (Optional)" class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <div class="md:col-span-2">
+                    <button type="submit" class="bg-blue-600 text-white p-3 rounded-lg w-full hover:bg-blue-700 transition">
+                        Search Flights
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Flight Results -->
+        {% if flights %}
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">✈️ Flight Search Results</h2>
+            <ul class="space-y-4">
+                {% for flight in flights %}
+                    <li class="p-4 bg-gray-50 border rounded-md">
+                        <strong class="text-blue-600">Flight {{ flight.flight.iata }}</strong> from
+                        <span class="text-gray-700">{{ flight.departure.airport }} ({{ flight.departure.iata }})</span>
+                        to <span class="text-gray-700">{{ flight.arrival.airport }} ({{ flight.arrival.iata }})</span>
+                        is <span class="font-bold {% if flight.flight_status == 'active' %}text-green-600{% else %}text-red-600{% endif %}">
+                            {{ flight.flight_status|capfirst }}
+                        </span>.
+                    </li>
+                {% empty %}
+                    <li class="text-gray-500">No flights found.</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <!-- Recent Searches -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">🕘 Recent Searches</h2>
+            <ul class="space-y-3">
+                {% for search in recent_searches %}
+                    <li class="p-3 bg-gray-50 border rounded-md text-sm">
+                        <span class="text-gray-800">Departure: <strong>{{ search.departure }}</strong></span>,
+                        <span class="text-gray-800">Arrival: <strong>{{ search.arrival }}</strong></span>,
+                        Flight Number: <strong>{{ search.flight_number|default:'N/A' }}</strong>,
+                        Airline: <strong>{{ search.airline|default:'N/A' }}</strong>
+                        <span class="block text-gray-500 text-xs mt-1">Searched on {{ search.searched_at|date:"d M Y H:i" }}</span>
+                    </li>
+                {% empty %}
+                    <li class="text-gray-500">No recent searches.</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
