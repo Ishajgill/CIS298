@@ -3,7 +3,7 @@ import requests
 from .models import Search
 
 def home(request):
-    api_key = 'YOUR_API_KEY'
+    api_key = 'e0b73ce79fb45e31b85472ff8a7150b0'
 
     departure = request.GET.get('departure')
     arrival = request.GET.get('arrival')
