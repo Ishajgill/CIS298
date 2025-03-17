@@ -60,7 +60,7 @@ class EnigmaMachine:
         self.plugboard = Plugboard(plugboard_settings)
 
     def step_rotors(self):
-        #rightmost rotor always rotates when a key is pressed
+        #rightmost rotor always rotates when a key is pressed  
         rotate_next = True
         for rotor in self.rotors:
             if rotate_next:
