@@ -1,10 +1,9 @@
 import customtkinter as ctk
 import json
 import os
-from src.translator import translate_to_spanish
+from src.translator import translate
 from src.tts import speak
 from src.stt import listen_and_transcribe
-
 
 class TravelTalkApp(ctk.CTk):
     def __init__(self):
@@ -37,16 +36,24 @@ class TravelTalkApp(ctk.CTk):
         self.output_text.pack(pady=10)
 
         # Custom Input Label
-        input_label = ctk.CTkLabel(self, text="Type any sentence in English:")
+        input_label = ctk.CTkLabel(self, text="Type any sentence:")
         input_label.pack()
 
         # Entry field
         self.input_entry = ctk.CTkEntry(self, width=500)
         self.input_entry.pack(pady=5)
 
-        # Translate & Speak Button
-        mic_button = ctk.CTkButton(self, text="🎤 Speak & Translate", command=self.handle_voice_input)
-        mic_button.pack(pady=10)
+        # 📝 Translate typed text
+        text_translate_btn = ctk.CTkButton(self, text="📝 Translate Text", command=self.handle_custom_translation)
+        text_translate_btn.pack(pady=5)
+
+        # 🎤 English → Spanish (voice)
+        eng_to_spa_btn = ctk.CTkButton(self, text="🎤 English → Spanish (Speak)", command=self.handle_english_to_spanish_voice)
+        eng_to_spa_btn.pack(pady=5)
+
+        # 🎤 Spanish → English (voice)
+        spa_to_eng_btn = ctk.CTkButton(self, text="🎤 Spanish → English (Speak)", command=self.handle_spanish_to_english_voice)
+        spa_to_eng_btn.pack(pady=5)
 
     def load_phrases(self, category):
         self.output_text.delete("1.0", "end")
@@ -72,21 +79,36 @@ class TravelTalkApp(ctk.CTk):
         if not user_input.strip():
             return
 
-        translated = translate_to_spanish(user_input)
-        self.output_text.insert("end", f"📝 You: {user_input}\n🗣️ Spanish: {translated}\n\n")
-        speak(translated)
+        # Detect direction based on simple Spanish keywords
+        is_spanish = any(word in user_input.lower() for word in ['¿', 'el', 'la', 'cómo', 'por', 'favor'])
+        target_lang = 'en' if is_spanish else 'es'
 
-    def handle_voice_input(self):
-        self.output_text.insert("end", "🎙️ Listening for voice input...\n")
+        translated = translate(user_input, source_lang='auto', target_lang=target_lang)
+        self.output_text.insert("end", f"📝 You: {user_input}\n🔁 Translated: {translated}\n\n")
+        speak(translated, lang=target_lang)
+
+    def handle_english_to_spanish_voice(self):
+        self.output_text.insert("end", "🎙️ Listening for English input...\n")
 
         user_input = listen_and_transcribe()
         self.output_text.insert("end", f"🧠 Detected: {user_input}\n")
 
         if user_input.startswith("["):
-            return  # error occurred, don't proceed
+            return
 
-        translated = translate_to_spanish(user_input)
-        self.output_text.insert("end", f"🗣️ Spanish: {translated}\n\n")
-        speak(translated)
+        translated = translate(user_input, source_lang='en', target_lang='es')
+        self.output_text.insert("end", f"🔁 Spanish: {translated}\n\n")
+        speak(translated, lang='es')
 
+    def handle_spanish_to_english_voice(self):
+        self.output_text.insert("end", "🎙️ Listening for Spanish input...\n")
 
+        user_input = listen_and_transcribe()
+        self.output_text.insert("end", f"🧠 Detected: {user_input}\n")
+
+        if user_input.startswith("["):
+            return
+
+        translated = translate(user_input, source_lang='es', target_lang='en')
+        self.output_text.insert("end", f"🔁 English: {translated}\n\n")
+        speak(translated, lang='en')
