@@ -1,6 +1,6 @@
 
 from deep_translator import GoogleTranslator
-from langdetect import detect
+
 
 def translate(text, source_lang='auto', target_lang='es'):
     if not text.strip():
