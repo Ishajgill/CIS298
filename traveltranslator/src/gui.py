@@ -15,9 +15,9 @@ class TravelTalkApp(ctk.CTk):
         self.resizable(False, False)
 
         # Appearance and Theme
-        ctk.set_appearance_mode("light")
+        ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("green")
-
+        # counting actual number times a word is spoken or typed
         self.translation_counts = defaultdict(int)
         self.custom_dictionary = {
             "restroom": "bathroom",
@@ -34,7 +34,7 @@ class TravelTalkApp(ctk.CTk):
         # Title
         ctk.CTkLabel(
             self,
-            text="\U0001F30D Travel Talk Translator",
+            text="\U0001F30D Personal Travel Talk/Text Translator",
             font=("Arial", 24, "bold"),
             text_color="#1A535C"
         ).pack(pady=10)
@@ -65,7 +65,7 @@ class TravelTalkApp(ctk.CTk):
                 text=category,
                 width=120,
                 fg_color=colors[category],
-                text_color="white",
+                text_color="Black",
                 hover_color="#333",
                 command=lambda c=category: self.load_phrases(c)
             ).pack(side="left", padx=10)
@@ -126,7 +126,7 @@ class TravelTalkApp(ctk.CTk):
 
         self.voice_button = ctk.CTkButton(self, text="", command=self.handle_voice_translation, fg_color="#B388EB")
         self.voice_button.pack(pady=5)
-
+        # all the translations done so far
         ctk.CTkButton(
             self,
             text="\u2728 Show Translation Stats",
@@ -141,13 +141,13 @@ class TravelTalkApp(ctk.CTk):
         from_lang = self.from_lang_var.get()
         to_lang = self.to_lang_var.get()
         self.voice_button.configure(text=f"\U0001F3A4 {from_lang} \u2192 {to_lang} (Speak)")
-
+    #Called automatically when the user changes the selected country.
     def sync_language_with_country(self, *args):
         country = self.country_var.get()
         if country in self.country_to_lang:
             self.to_lang_var.set(self.country_to_lang[country])
             self.update_voice_button_text()
-
+    #removing punctuation
     def clean_input(self, text):
         text = text.lower().strip()
         text = re.sub(r'[^\w\s]', '', text)
@@ -169,7 +169,8 @@ class TravelTalkApp(ctk.CTk):
         self.output_text.insert("end", f"\U0001F4D8 {category.title()} Phrases in {country.title()}:\n\n")
         for i, phrase in enumerate(data.get("phrases", []), start=1):
             self.output_text.insert("end", f"{i}. {phrase['english']}\n   \u2192 {phrase['spanish']}\n\n")
-
+    # Translates user input from the "From" language to the "To" language,
+    # speaks the result aloud, and displays it in the output text area.
     def handle_custom_translation(self):
         user_input = self.input_entry.get()
         if not user_input.strip(): return
@@ -180,7 +181,7 @@ class TravelTalkApp(ctk.CTk):
         self.translation_counts[cleaned] += 1
         self.output_text.insert("end", f"You: {user_input}\n\U0001F501 Translated: {translated}\n\n")
         speak(translated, lang=target_lang)
-
+    # Normalizes the speech (lowercased, punctuation removed, custom substitutions)
     def handle_voice_translation(self):
         from_lang_key = self.from_lang_var.get()
         to_lang_key = self.to_lang_var.get()
