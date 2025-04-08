@@ -2,84 +2,83 @@
   "phrases": [
     {
       "english": "I need help!",
-      "spanish": "¡Necesito ayuda!"
+      "french": "J'ai besoin d'aide!"
     },
     {
       "english": "Call the police!",
-      "spanish": "¡Llama a la policía!"
+      "french": "Appelez la police!"
     },
     {
       "english": "I need a doctor.",
-      "spanish": "Necesito un doctor."
+      "french": "J'ai besoin d'un médecin."
     },
     {
       "english": "There has been an accident.",
-      "spanish": "Ha habido un accidente."
+      "french": "Il y a eu un accident."
     },
     {
       "english": "I am lost.",
-      "spanish": "Estoy perdido."
+      "french": "Je suis perdu."
     },
     {
       "english": "Can you help me?",
-      "spanish": "¿Puedes ayudarme?"
+      "french": "Pouvez-vous m'aider?"
     },
     {
-      "english": "I don’t speak Spanish.",
-      "spanish": "No hablo Espanol."
+      "english": "I don’t speak French.",
+      "french": "Je ne parle pas français."
     },
     {
       "english": "Is everything okay?",
-      "spanish": "¿Está todo bien?"
+      "french": "Est-ce que tout va bien?"
     },
     {
       "english": "Where is the nearest hospital?",
-      "spanish": "¿Dónde está el hospital más cercano?"
+      "french": "Où se trouve l'hôpital le plus proche?"
     },
     {
       "english": "Please, hurry!",
-      "spanish": "¡Por favor, apúrate!"
+      "french": "S'il vous plaît, dépêchez-vous!"
     },
     {
       "english": "I’ve been robbed.",
-      "spanish": "Me han robado."
+      "french": "J'ai été volé."
     },
     {
       "english": "I’ve lost my passport.",
-      "spanish": "He perdido mi pasaporte."
+      "french": "J'ai perdu mon passeport."
     },
     {
       "english": "I feel sick.",
-      "spanish": "Me siento mal."
+      "french": "Je me sens malade."
     },
     {
       "english": "I need a pharmacy.",
-      "spanish": "Necesito una farmacia."
+      "french": "I need a pharmacy."
     },
     {
       "english": "Is there a doctor who speaks English?",
-      "spanish": "¿Hay un doctor que hable inglés?"
+      "french": "Y a-t-il un médecin qui parle anglais?"
     },
     {
       "english": "I’m having an allergic reaction.",
-      "spanish": "Estoy teniendo una reacción alérgica."
+      "french": "J'ai une réaction allergique."
     },
     {
       "english": "I need to contact my embassy.",
-      "spanish": "Necesito contactar mi embajada."
+      "french": "Je dois contacter mon ambassade."
     },
     {
       "english": "My phone was stolen.",
-      "spanish": "Me robaron el teléfono."
+      "french": "Mon téléphone a été volé."
     },
     {
       "english": "Help! Fire!",
-      "spanish": "¡Ayuda! ¡Fuego!"
+      "french": "Au secours! Au feu!"
     },
     {
       "english": "There’s been a theft.",
-      "spanish": "Ha habido un robo."
+      "french": "Il y a eu un vol."
     }
   ]
 }
-

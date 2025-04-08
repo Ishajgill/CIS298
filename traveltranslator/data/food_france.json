@@ -2,31 +2,31 @@
   "phrases": [
     {
       "english": "I would like a table for two, please.",
-      "spanish": "Quisiera una mesa para dos, por favor."
+      "french": "Je voudrais une table pour deux, s'il vous plaît."
     },
     {
       "english": "Can I see the menu?",
-      "spanish": "¿Puedo ver el menú?"
+      "french": "Puis-je voir le menu?"
     },
     {
       "english": "I am allergic to nuts.",
-      "spanish": "Soy alérgico (male)/alérgica (female) a las nueces."
+      "french": "Je suis allergique aux noix."
     },
     {
       "english": "The food was delicious!",
-      "spanish": "¡La comida estaba deliciosa!"
+      "french": "La nourriture était délicieuse!"
     },
     {
       "english": "I would like the check please.",
-      "spanish": "Me gustaria el cheque por favor."
+      "french": "Je voudrais le chèque s'il vous plaît."
     },
     {
       "english": "I am ready to order!",
-      "spanish": "Estoy listo (male)/lista (female) para ordenar!"
+      "french": "Je suis prêt à commander!"
     },
     {
       "english": "How much does this cost?",
-      "spanish": "Cuanto cuesta esto?"
+      "french": "Combien cela coûte-t-il ?"
     }
   ]
 }

@@ -2,83 +2,83 @@
   "phrases": [
     {
       "english": "Where is the train station?",
-      "spanish": "¿Dónde está la estación de tren?"
+      "french": "Où est la gare?"
     },
     {
       "english": "Where is the bus stop?",
-      "spanish": "¿Dónde está la parada de autobús?"
+      "french": "Où est l'arrêt de bus?"
     },
     {
       "english": "How do I get to the airport?",
-      "spanish": "¿Cómo llego al aeropuerto?"
+      "french": "Comment puis-je me rendre à l'aéroport?"
     },
     {
       "english": "I need a taxi.",
-      "spanish": "Necesito un taxi."
+      "french": "J'ai besoin d'un taxi."
     },
     {
       "english": "Can you call a taxi for me?",
-      "spanish": "¿Puedes llamarme un taxi?"
+      "french": "Peux-tu m'appeler un taxi?"
     },
     {
-      "english": "How much is a ticket to Mexico City?",
-      "spanish": "¿Cuánto cuesta un boleto a la Ciudad de Mexico?"
+      "english": "How much is a ticket to Paris?",
+      "french": "Combien coûte un billet pour Paris?"
     },
     {
       "english": "Where can I buy a ticket?",
-      "spanish": "¿Dónde puedo comprar un boleto?"
+      "french": "Où peut-on acheter un billet?"
     },
     {
       "english": "Is this seat taken?",
-      "spanish": "¿Está ocupado este asiento?"
+      "french": "Ce siège est-il occupé?"
     },
     {
       "english": "When does the next train arrive?",
-      "spanish": "¿Cuándo llega el próximo tren?"
+      "french": "Quand arrive le prochain train?"
     },
     {
       "english": "Does this bus go to the city center?",
-      "spanish": "¿Este autobús va al centro de la ciudad?"
+      "french": "Est-ce que ce bus va au centre-ville?"
     },
     {
       "english": "Which platform is it?",
-      "spanish": "¿Cuál es el andén?"
+      "french": "Quelle est cette plateforme?"
     },
     {
       "english": "How long does the trip take?",
-      "spanish": "¿Cuánto dura el viaje?"
+      "french": "Combien de temps dure le voyage?"
     },
     {
       "english": "Turn left.",
-      "spanish": "Gira a la izquierda."
+      "french": "Tourner à gauche."
     },
     {
       "english": "Turn right.",
-      "spanish": "Gira a la derecha."
+      "french": "Tournez à droite."
     },
     {
       "english": "Go straight ahead.",
-      "spanish": "Sigue recto."
+      "french": "Continuez tout droit."
     },
     {
       "english": "Stop here, please.",
-      "spanish": "Para aquí, por favor."
+      "french": "Arrêtez-vous ici, s'il vous plaît."
     },
     {
       "english": "I missed my stop.",
-      "spanish": "Perdí mi parada."
+      "french": "J'ai raté mon arrêt."
     },
     {
       "english": "Is it far?",
-      "spanish": "¿Está lejos?"
+      "french": "C'est loin ?"
     },
     {
       "english": "Can I walk there?",
-      "spanish": "¿Puedo caminar allí?"
+      "french": "Puis-je y aller à pied?"
     },
     {
       "english": "Is there a map?",
-      "spanish": "¿Hay un mapa?"
+      "french": "Y a-t-il une carte ?"
     }
   ]
 }
