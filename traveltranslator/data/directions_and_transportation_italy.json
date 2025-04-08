@@ -1,0 +1,85 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "italian": "Dov'è la stazione dei treni?"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "italian": "Dov'è la fermata dell'autobus?"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "italian": "Come arrivo all'aeroporto?"
+    },
+    {
+      "english": "I need a taxi.",
+      "italian": "Ho bisogno di un taxi."
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "italian": "Puoi chiamarmi un taxi?"
+    },
+    {
+      "english": "How much is a ticket to Rome?",
+      "italian": "Quanto costa un biglietto per Roma?"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "italian": "Dove posso comprare un biglietto?"
+    },
+    {
+      "english": "Is this seat taken?",
+      "italian": "Questo posto è occupato?"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "italian": "Quando arriva il prossimo treno?"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "italian": "Questo autobus va al centro città?"
+    },
+    {
+      "english": "Which platform is it?",
+      "italian": "Qual è il binario?"
+    },
+    {
+      "english": "How long does the trip take?",
+      "italian": "Quanto dura il viaggio?"
+    },
+    {
+      "english": "Turn left.",
+      "italian": "Gira a sinistra."
+    },
+    {
+      "english": "Turn right.",
+      "italian": "Gira a destra."
+    },
+    {
+      "english": "Go straight ahead.",
+      "italian": "Vai dritto."
+    },
+    {
+      "english": "Stop here, please.",
+      "italian": "Fermati qui, per favore."
+    },
+    {
+      "english": "I missed my stop.",
+      "italian": "Ho perso la mia fermata."
+    },
+    {
+      "english": "Is it far?",
+      "italian": "È lontano?"
+    },
+    {
+      "english": "Can I walk there?",
+      "italian": "Posso andare a piedi?"
+    },
+    {
+      "english": "Is there a map?",
+      "italian": "C'è una mappa?"
+    }
+  ]
+}
+

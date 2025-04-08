@@ -1,0 +1,85 @@
+{
+  "phrases": [
+    {
+      "english": "I need help!",
+      "spanish": "¡Necesito ayuda!"
+    },
+    {
+      "english": "Call the police!",
+      "spanish": "¡Llama a la policía!"
+    },
+    {
+      "english": "I need a doctor.",
+      "spanish": "Necesito un doctor."
+    },
+    {
+      "english": "There has been an accident.",
+      "spanish": "Ha habido un accidente."
+    },
+    {
+      "english": "I am lost.",
+      "spanish": "Estoy perdido."
+    },
+    {
+      "english": "Can you help me?",
+      "spanish": "¿Puedes ayudarme?"
+    },
+    {
+      "english": "I don’t speak Italian.",
+      "spanish": "No hablo italiano."
+    },
+    {
+      "english": "Is everything okay?",
+      "spanish": "¿Está todo bien?"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "spanish": "¿Dónde está el hospital más cercano?"
+    },
+    {
+      "english": "Please, hurry!",
+      "spanish": "¡Por favor, apúrate!"
+    },
+    {
+      "english": "I’ve been robbed.",
+      "spanish": "Me han robado."
+    },
+    {
+      "english": "I’ve lost my passport.",
+      "spanish": "He perdido mi pasaporte."
+    },
+    {
+      "english": "I feel sick.",
+      "spanish": "Me siento mal."
+    },
+    {
+      "english": "I need a pharmacy.",
+      "spanish": "Necesito una farmacia."
+    },
+    {
+      "english": "Is there a doctor who speaks English?",
+      "spanish": "¿Hay un doctor que hable inglés?"
+    },
+    {
+      "english": "I’m having an allergic reaction.",
+      "spanish": "Estoy teniendo una reacción alérgica."
+    },
+    {
+      "english": "I need to contact my embassy.",
+      "spanish": "Necesito contactar mi embajada."
+    },
+    {
+      "english": "My phone was stolen.",
+      "spanish": "Me robaron el teléfono."
+    },
+    {
+      "english": "Help! Fire!",
+      "spanish": "¡Ayuda! ¡Fuego!"
+    },
+    {
+      "english": "There’s been a theft.",
+      "spanish": "Ha habido un robo."
+    }
+  ]
+}
+

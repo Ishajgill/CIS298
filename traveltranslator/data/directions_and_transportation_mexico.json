@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "spanish": "¿Dónde está la estación de tren?"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "spanish": "¿Dónde está la parada de autobús?"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "spanish": "¿Cómo llego al aeropuerto?"
+    },
+    {
+      "english": "I need a taxi.",
+      "spanish": "Necesito un taxi."
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "spanish": "¿Puedes llamarme un taxi?"
+    },
+    {
+      "english": "How much is a ticket to Rome?",
+      "spanish": "¿Cuánto cuesta un boleto a Roma?"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "spanish": "¿Dónde puedo comprar un boleto?"
+    },
+    {
+      "english": "Is this seat taken?",
+      "spanish": "¿Está ocupado este asiento?"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "spanish": "¿Cuándo llega el próximo tren?"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "spanish": "¿Este autobús va al centro de la ciudad?"
+    },
+    {
+      "english": "Which platform is it?",
+      "spanish": "¿Cuál es el andén?"
+    },
+    {
+      "english": "How long does the trip take?",
+      "spanish": "¿Cuánto dura el viaje?"
+    },
+    {
+      "english": "Turn left.",
+      "spanish": "Gira a la izquierda."
+    },
+    {
+      "english": "Turn right.",
+      "spanish": "Gira a la derecha."
+    },
+    {
+      "english": "Go straight ahead.",
+      "spanish": "Sigue recto."
+    },
+    {
+      "english": "Stop here, please.",
+      "spanish": "Para aquí, por favor."
+    },
+    {
+      "english": "I missed my stop.",
+      "spanish": "Perdí mi parada."
+    },
+    {
+      "english": "Is it far?",
+      "spanish": "¿Está lejos?"
+    },
+    {
+      "english": "Can I walk there?",
+      "spanish": "¿Puedo caminar allí?"
+    },
+    {
+      "english": "Is there a map?",
+      "spanish": "¿Hay un mapa?"
+    }
+  ]
+}

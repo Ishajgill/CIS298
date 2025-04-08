@@ -1,0 +1,85 @@
+{
+  "phrases": [
+    {
+      "english": "I need help!",
+      "italian": "Ho bisogno di aiuto!"
+    },
+    {
+      "english": "Call the police!",
+      "italian": "Chiama la polizia!"
+    },
+    {
+      "english": "I need a doctor.",
+      "italian": "Ho bisogno di un dottore."
+    },
+    {
+      "english": "There has been an accident.",
+      "italian": "C'è stato un incidente."
+    },
+    {
+      "english": "I am lost.",
+      "italian": "Mi sono perso."
+    },
+    {
+      "english": "Can you help me?",
+      "italian": "Puoi aiutarmi?"
+    },
+    {
+      "english": "I don’t speak Italian.",
+      "italian": "Non parlo italiano."
+    },
+    {
+      "english": "Is everything okay?",
+      "italian": "Va tutto bene?"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "italian": "Dov'è l'ospedale più vicino?"
+    },
+    {
+      "english": "Please, hurry!",
+      "italian": "Per favore, fai presto!"
+    },
+    {
+      "english": "I’ve been robbed.",
+      "italian": "Sono stato derubato."
+    },
+    {
+      "english": "I’ve lost my passport.",
+      "italian": "Ho perso il mio passaporto."
+    },
+    {
+      "english": "I feel sick.",
+      "italian": "Mi sento male."
+    },
+    {
+      "english": "I need a pharmacy.",
+      "italian": "Ho bisogno di una farmacia."
+    },
+    {
+      "english": "Is there a doctor who speaks English?",
+      "italian": "C'è un dottore che parla inglese?"
+    },
+    {
+      "english": "I’m having an allergic reaction.",
+      "italian": "Sto avendo una reazione allergica."
+    },
+    {
+      "english": "I need to contact my embassy.",
+      "italian": "Ho bisogno di contattare la mia ambasciata."
+    },
+    {
+      "english": "My phone was stolen.",
+      "italian": "Mi hanno rubato il telefono."
+    },
+    {
+      "english": "Help! Fire!",
+      "italian": "Aiuto! Fuoco!"
+    },
+    {
+      "english": "There’s been a theft.",
+      "italian": "C'è stato un furto."
+    }
+  ]
+}
+

@@ -56,10 +56,10 @@ class TravelTalkApp(ctk.CTk):
 
         colors = {
             "Food": "#FF6B6B",
-            "Directions": "#4ECDC4",
+            "Directions and Transportation": "#4ECDC4",
             "Emergencies": "#1A535C"
         }
-        for category in ["Food", "Directions", "Emergencies"]:
+        for category in ["Food", "Directions and Transportation", "Emergencies"]:
             ctk.CTkButton(
                 toolbar_frame,
                 text=category,
@@ -158,7 +158,12 @@ class TravelTalkApp(ctk.CTk):
     def load_phrases(self, category):
         self.output_text.delete("1.0", "end")
         country = self.country_var.get().lower()
-        filename = f"data/{category.lower()}_{country}.json"
+        language = self.country_to_lang.get(country.title())  # Get corresponding language
+        if not language:
+            self.output_text.insert("end", f"Language for {country.title()} not found.\n")
+            return
+
+        filename = f"data/{category.replace(' ', '_').lower()}_{country.lower()}.json"
         try:
             with open(filename, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -168,7 +173,12 @@ class TravelTalkApp(ctk.CTk):
 
         self.output_text.insert("end", f"\U0001F4D8 {category.title()} Phrases in {country.title()}:\n\n")
         for i, phrase in enumerate(data.get("phrases", []), start=1):
-            self.output_text.insert("end", f"{i}. {phrase['english']}\n   \u2192 {phrase['spanish']}\n\n")
+            translated_phrase = phrase.get(language.lower())  # e.g. 'italian', 'spanish', etc.
+            if translated_phrase:
+                self.output_text.insert("end", f"{i}. {phrase['english']}\n   \u2192 {translated_phrase}\n\n")
+            else:
+                self.output_text.insert("end", f"{i}. {phrase['english']}\n   \u2192 Translation not available\n\n")
+
     # Translates user input from the "From" language to the "To" language,
     # speaks the result aloud, and displays it in the output text area.
     def handle_custom_translation(self):
