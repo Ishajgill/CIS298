@@ -100,6 +100,18 @@ class TravelTalkApp(ctk.CTk):
         )
         self.source_lang_menu.pack(side="left", padx=10)
 
+        # Swap Button
+        swap_button = ctk.CTkButton(
+            lang_frame,
+            text="\U0001F501",
+            width=40,
+            height=32,
+            command=self.swap_languages,
+            fg_color="#FFD700",
+            text_color="black"
+        )
+        swap_button.pack(side="left", padx=5)
+
         ctk.CTkLabel(lang_frame, text="To:").pack(side="left", padx=(20, 5))
         self.target_lang_menu = ctk.CTkOptionMenu(
             lang_frame, values=list(self.languages.keys()), variable=self.to_lang_var,
@@ -137,16 +149,25 @@ class TravelTalkApp(ctk.CTk):
 
         self.update_voice_button_text()
 
+    def swap_languages(self):
+        from_lang = self.from_lang_var.get()
+        to_lang = self.to_lang_var.get()
+        self.from_lang_var.set(to_lang)
+        self.to_lang_var.set(from_lang)
+        self.update_voice_button_text()
+
     def update_voice_button_text(self):
         from_lang = self.from_lang_var.get()
         to_lang = self.to_lang_var.get()
         self.voice_button.configure(text=f"\U0001F3A4 {from_lang} \u2192 {to_lang} (Speak)")
+
     #Called automatically when the user changes the selected country.
     def sync_language_with_country(self, *args):
         country = self.country_var.get()
         if country in self.country_to_lang:
             self.to_lang_var.set(self.country_to_lang[country])
             self.update_voice_button_text()
+
     #removing punctuation
     def clean_input(self, text):
         text = text.lower().strip()
@@ -191,6 +212,7 @@ class TravelTalkApp(ctk.CTk):
         self.translation_counts[cleaned] += 1
         self.output_text.insert("end", f"You: {user_input}\n\U0001F501 Translated: {translated}\n\n")
         speak(translated, lang=target_lang)
+
     # Normalizes the speech (lowercased, punctuation removed, custom substitutions)
     def handle_voice_translation(self):
         from_lang_key = self.from_lang_var.get()
@@ -217,7 +239,6 @@ class TravelTalkApp(ctk.CTk):
         sorted_counts = sorted(self.translation_counts.items(), key=lambda x: x[1], reverse=True)
         for i, (phrase, count) in enumerate(sorted_counts, start=1):
             self.output_text.insert("end", f"{i}. '{phrase}' \u2192 used {count} time(s)\n")
-
 
 if __name__ == "__main__":
     app = TravelTalkApp()
