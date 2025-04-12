@@ -24,7 +24,7 @@ class TravelTalkApp(ctk.CTk):
             "cellphone": "mobile phone",
             "gas": "petrol"
         }
-
+        #Quick Phrase Tab
         self.country_to_lang = {
             "Italy": "Italian",
             "Mexico": "Spanish",
@@ -36,7 +36,7 @@ class TravelTalkApp(ctk.CTk):
             self,
             text="\U0001F30D Personal Travel Talk/Text Translator",
             font=("Arial", 24, "bold"),
-            text_color="#1A535C"
+            text_color="#ffffff"
         ).pack(pady=10)
 
         # Country + Category Toolbar
@@ -49,15 +49,15 @@ class TravelTalkApp(ctk.CTk):
             toolbar_frame,
             values=list(self.country_to_lang.keys()),
             variable=self.country_var,
-            fg_color="#FFDD57",
+            fg_color="#ffffff",
             text_color="black",
-            button_color="#38A169"
+            button_color="#2982d7"
         ).pack(side="left", padx=10)
 
         colors = {
-            "Food": "#FF6B6B",
-            "Directions and Transportation": "#4ECDC4",
-            "Emergencies": "#1A535C"
+            "Food": "#5fc234",
+            "Directions and Transportation": "#ffed03",
+            "Emergencies": "#e52020"
         }
         for category in ["Food", "Directions and Transportation", "Emergencies"]:
             ctk.CTkButton(
@@ -89,7 +89,7 @@ class TravelTalkApp(ctk.CTk):
         self.from_lang_var = ctk.StringVar(value="English")
         self.to_lang_var = ctk.StringVar(value="Spanish")
 
-        lang_frame = ctk.CTkFrame(self, fg_color="#f0f0f0")
+        lang_frame = ctk.CTkFrame(self, fg_color="#444444")
         lang_frame.pack(pady=5)
 
         ctk.CTkLabel(lang_frame, text="From:").pack(side="left", padx=(0, 5))
@@ -123,7 +123,7 @@ class TravelTalkApp(ctk.CTk):
         self.output_text = ctk.CTkTextbox(self, width=600, height=200, fg_color="#F7FFF7", text_color="#000")
         self.output_text.pack(pady=10)
 
-        ctk.CTkLabel(self, text="Type any sentence:", text_color="#444").pack()
+        ctk.CTkLabel(self, text="Type any sentence:", text_color="#ffffff").pack()
         self.input_entry = ctk.CTkEntry(self, width=500, fg_color="white", text_color="black")
         self.input_entry.pack(pady=5)
 
