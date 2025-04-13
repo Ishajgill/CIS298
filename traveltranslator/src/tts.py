@@ -15,12 +15,13 @@ LANG_VOICE_HINTS = {
     "pt": ["portuguese", "português"],
     "ru": ["russian", "русский"],
     "zh": ["chinese", "中文"],
-    "ar": ["arabic", "عربي"],
+    "ar": ["arabic", "ar-eg", "hoda", "naayf", "zira"],  # ← Add based on what Dev_list_voices.py shows
     "hi": ["hindi", "हिन्दी"],
     "ja": ["japanese", "日本語"],
     "ko": ["korean", "한국어"],
     "tr": ["turkish", "türkçe"]
 }
+
 
 def speak(text: str, lang: str = "en"):
     try:

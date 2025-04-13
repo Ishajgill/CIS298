@@ -1,0 +1,32 @@
+{
+  "phrases": [
+    {
+      "english": "I would like a table for two, please.",
+      "arabic": "أود طاولة لشخصين، من فضلك."
+    },
+    {
+      "english": "Can I see the menu?",
+      "arabic": "هل يمكنني رؤية القائمة؟"
+    },
+    {
+      "english": "I am allergic to nuts.",
+      "arabic": "أنا أعاني من حساسية تجاه المكسرات."
+    },
+    {
+      "english": "The food was delicious!",
+      "arabic": "كان الطعام لذيذًا!"
+    },
+    {
+      "english": "I would like the check please.",
+      "arabic": "أود الفاتورة من فضلك."
+    },
+    {
+      "english": "I am ready to order!",
+      "arabic": "أنا جاهز للطلب!"
+    },
+    {
+      "english": "How much does this cost?",
+      "arabic": "كم يكلف هذا؟"
+    }
+  ]
+}

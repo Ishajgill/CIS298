@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "I need help!",
+      "arabic": "أحتاج إلى المساعدة!"
+    },
+    {
+      "english": "Call the police!",
+      "arabic": "اتصل بالشرطة!"
+    },
+    {
+      "english": "I need a doctor.",
+      "arabic": "أحتاج إلى طبيب."
+    },
+    {
+      "english": "There has been an accident.",
+      "arabic": "حدث حادث."
+    },
+    {
+      "english": "I am lost.",
+      "arabic": "أنا ضائع."
+    },
+    {
+      "english": "Can you help me?",
+      "arabic": "هل يمكنك مساعدتي؟"
+    },
+    {
+      "english": "I don’t speak Arabic.",
+      "arabic": "أنا لا أتكلم العربية."
+    },
+    {
+      "english": "Is everything okay?",
+      "arabic": "هل كل شيء على ما يرام؟"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "arabic": "أين أقرب مستشفى؟"
+    },
+    {
+      "english": "Please, hurry!",
+      "arabic": "من فضلك، أسرع!"
+    },
+    {
+      "english": "I’ve been robbed.",
+      "arabic": "لقد تم سرقتي."
+    },
+    {
+      "english": "I’ve lost my passport.",
+      "arabic": "فقدت جوازي."
+    },
+    {
+      "english": "I feel sick.",
+      "arabic": "أشعر بالمرض."
+    },
+    {
+      "english": "I need a pharmacy.",
+      "arabic": "أحتاج إلى صيدلية."
+    },
+    {
+      "english": "Is there a doctor who speaks English?",
+      "arabic": "هل يوجد طبيب يتحدث الإنجليزية؟"
+    },
+    {
+      "english": "I’m having an allergic reaction.",
+      "arabic": "أعاني من الحساسية."
+    },
+    {
+      "english": "I need to contact my embassy.",
+      "arabic": "أحتاج إلى الاتصال بسفارتي."
+    },
+    {
+      "english": "My phone was stolen.",
+      "arabic": "تمت سرقة هاتفي."
+    },
+    {
+      "english": "Help! Fire!",
+      "arabic": "النجدة! حريق!"
+    },
+    {
+      "english": "There’s been a theft.",
+      "arabic": "حدثت سرقة."
+    }
+  ]
+}

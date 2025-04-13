@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "arabic": "أين محطة القطار؟"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "arabic": "أين موقف الحافلات؟"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "arabic": "كيف أصل إلى المطار؟"
+    },
+    {
+      "english": "I need a taxi.",
+      "arabic": "أحتاج إلى سيارة أجرة."
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "arabic": "هل يمكنك أن تطلب لي سيارة أجرة؟"
+    },
+    {
+      "english": "How much is a ticket to Mexico City?",
+      "arabic": "كم ثمن تذكرة إلى مدينة مكسيكو؟"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "arabic": "أين يمكنني شراء تذكرة؟"
+    },
+    {
+      "english": "Is this seat taken?",
+      "arabic": "هل هذا المقعد مشغول؟"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "arabic": "متى يصل القطار التالي؟"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "arabic": "هل تذهب هذه الحافلة إلى وسط المدينة؟"
+    },
+    {
+      "english": "Which platform is it?",
+      "arabic": "ما هو الرصيف؟"
+    },
+    {
+      "english": "How long does the trip take?",
+      "arabic": "كم تستغرق الرحلة؟"
+    },
+    {
+      "english": "Turn left.",
+      "arabic": "انعطف يسارًا."
+    },
+    {
+      "english": "Turn right.",
+      "arabic": "انعطف يمينًا."
+    },
+    {
+      "english": "Go straight ahead.",
+      "arabic": "اذهب مباشرة للأمام."
+    },
+    {
+      "english": "Stop here, please.",
+      "arabic": "قف هنا من فضلك."
+    },
+    {
+      "english": "I missed my stop.",
+      "arabic": "فاتتني محطتي."
+    },
+    {
+      "english": "Is it far?",
+      "arabic": "هل هو بعيد؟"
+    },
+    {
+      "english": "Can I walk there?",
+      "arabic": "هل يمكنني الذهاب سيرًا على الأقدام؟"
+    },
+    {
+      "english": "Is there a map?",
+      "arabic": "هل يوجد خريطة؟"
+    }
+  ]
+}
