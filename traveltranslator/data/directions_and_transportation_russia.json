@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "russian": "Где находится железнодорожная станция?"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "russian": "Где находится автобусная остановка?"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "russian": "Как добраться до аэропорта?"
+    },
+    {
+      "english": "I need a taxi.",
+      "russian": "Мне нужно такси."
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "russian": "Вы можете вызвать мне такси?"
+    },
+    {
+      "english": "How much is a ticket to Moscow?",
+      "russian": "Сколько стоит билет до Москвы?"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "russian": "Где купить билет?"
+    },
+    {
+      "english": "Is this seat taken?",
+      "russian": "Здесь свободно?"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "russian": "Когда прибывает следующий поезд?"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "russian": "Этот автобус идет в центр города?"
+    },
+    {
+      "english": "Which platform is it?",
+      "russian": "Какая это платформа?"
+    },
+    {
+      "english": "How long does the trip take?",
+      "russian": "Сколько времени займет поездка?"
+    },
+    {
+      "english": "Turn left.",
+      "russian": "Поверните налево."
+    },
+    {
+      "english": "Turn right.",
+      "russian": "Поверните направо."
+    },
+    {
+      "english": "Go straight ahead.",
+      "russian": "Идите прямо."
+    },
+    {
+      "english": "Stop here, please.",
+      "russian": "Остановите здесь, пожалуйста."
+    },
+    {
+      "english": "I missed my stop.",
+      "russian": "Я пропустил свою остановку."
+    },
+    {
+      "english": "Is it far?",
+      "russian": "Это далеко?"
+    },
+    {
+      "english": "Can I walk there?",
+      "russian": "Могу ли я пройти туда пешком?"
+    },
+    {
+      "english": "Is there a map?",
+      "russian": "Есть ли карта?"
+    }
+  ]
+}

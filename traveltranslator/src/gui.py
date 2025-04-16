@@ -26,9 +26,12 @@ class TravelTalkApp(ctk.CTk):
         }
         #Quick Phrase Tab
         self.country_to_lang = {
+            "Arabia": "Arabic",
+            "France": "French",
+            "Germany": "German",
             "Italy": "Italian",
             "Mexico": "Spanish",
-            "France": "French"
+            "Russia": "Russian"
         }
 
         # Title
@@ -65,7 +68,7 @@ class TravelTalkApp(ctk.CTk):
                 text=category,
                 width=120,
                 fg_color=colors[category],
-                text_color="Black",
+                text_color="black",
                 hover_color="#333",
                 command=lambda c=category: self.load_phrases(c)
             ).pack(side="left", padx=10)
@@ -96,7 +99,7 @@ class TravelTalkApp(ctk.CTk):
         self.source_lang_menu = ctk.CTkOptionMenu(
             lang_frame, values=list(self.languages.keys()), variable=self.from_lang_var,
             command=lambda _: self.update_voice_button_text(),
-            fg_color="#70C1B3"
+            fg_color="#2196F3"
         )
         self.source_lang_menu.pack(side="left", padx=10)
 
@@ -116,7 +119,7 @@ class TravelTalkApp(ctk.CTk):
         self.target_lang_menu = ctk.CTkOptionMenu(
             lang_frame, values=list(self.languages.keys()), variable=self.to_lang_var,
             command=lambda _: self.update_voice_button_text(),
-            fg_color="#FF6B6B"
+            fg_color="#E91E63"
         )
         self.target_lang_menu.pack(side="left", padx=10)
 
@@ -132,7 +135,7 @@ class TravelTalkApp(ctk.CTk):
             text="\U0001F501 Translate Text",
             command=self.handle_custom_translation,
             fg_color="#48CAE4",
-            text_color="black",
+            text_color="white",
             hover_color="#00B4D8"
         ).pack(pady=5)
 
@@ -144,7 +147,7 @@ class TravelTalkApp(ctk.CTk):
             text="\u2728 Show Translation Stats",
             command=self.show_translation_stats,
             fg_color="#FFD166",
-            text_color="black"
+            text_color="white"
         ).pack(pady=5)
 
         self.update_voice_button_text()

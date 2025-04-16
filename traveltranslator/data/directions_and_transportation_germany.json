@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "german": "Wo ist der Bahnhof?"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "german": "Wo ist die Bushaltestelle?"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "german": "Wie komme ich zum Flughafen?"
+    },
+    {
+      "english": "I need a taxi.",
+      "german": "Ich brauche ein Taxi."
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "german": "Können Sie mir ein Taxi rufen?"
+    },
+    {
+      "english": "How much is a ticket to Berlin?",
+      "german": "Wie viel kostet ein Ticket nach Berlin?"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "german": "Wo kann ich ein Ticket kaufen?"
+    },
+    {
+      "english": "Is this seat taken?",
+      "german": "Ist dieser Platz belegt?"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "german": "Wann kommt der nächste Zug?"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "german": "Fährt dieser Bus in die Innenstadt?"
+    },
+    {
+      "english": "Which platform is it?",
+      "german": "Um welche Plattform handelt es sich?"
+    },
+    {
+      "english": "How long does the trip take?",
+      "german": "Wie lange dauert die Fahrt?"
+    },
+    {
+      "english": "Turn left.",
+      "german": "Biegen Sie links ab."
+    },
+    {
+      "english": "Turn right.",
+      "german": "Biegen Sie rechts ab."
+    },
+    {
+      "english": "Go straight ahead.",
+      "german": "Gehen Sie geradeaus."
+    },
+    {
+      "english": "Stop here, please.",
+      "german": "Bitte halten Sie hier an."
+    },
+    {
+      "english": "I missed my stop.",
+      "german": "Ich habe meine Haltestelle verpasst."
+    },
+    {
+      "english": "Is it far?",
+      "german": "Ist es weit?"
+    },
+    {
+      "english": "Can I walk there?",
+      "german": "Kann ich dorthin laufen?"
+    },
+    {
+      "english": "Is there a map?",
+      "german": "Gibt es eine Karte?"
+    }
+  ]
+}

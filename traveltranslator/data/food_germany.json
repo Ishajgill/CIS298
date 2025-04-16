@@ -1,0 +1,32 @@
+{
+  "phrases": [
+    {
+      "english": "I would like a table for two, please.",
+      "german": "Ich hätte gerne einen Tisch für zwei."
+    },
+    {
+      "english": "Can I see the menu?",
+      "german": "Kann ich das Menü sehen?"
+    },
+    {
+      "english": "I am allergic to nuts.",
+      "german": "Ich bin allergisch gegen Nüsse."
+    },
+    {
+      "english": "The food was delicious!",
+      "german": "Das Essen war köstlich!"
+    },
+    {
+      "english": "I would like the check please.",
+      "german": "Ich hätte gerne den Scheck."
+    },
+    {
+      "english": "I am ready to order!",
+      "german": "Ich bin bereit zu bestellen!"
+    },
+    {
+      "english": "How much does this cost?",
+      "german": "Wie viel kostet das?"
+    }
+  ]
+}

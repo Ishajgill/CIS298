@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "I need help!",
+      "russian": "Мне нужна помощь!"
+    },
+    {
+      "english": "Call the police!",
+      "russian": "Вызовите полицию!"
+    },
+    {
+      "english": "I need a doctor.",
+      "russian": "Мне нужен врач."
+    },
+    {
+      "english": "There has been an accident.",
+      "russian": "Произошел несчастный случай."
+    },
+    {
+      "english": "I am lost.",
+      "russian": "Я заблудился."
+    },
+    {
+      "english": "Can you help me?",
+      "russian": "Вы можете помочь мне?"
+    },
+    {
+      "english": "I don’t speak Russian.",
+      "russian": "Я не говорю по-русски."
+    },
+    {
+      "english": "Is everything okay?",
+      "russian": "Все в порядке?"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "russian": "Где находится ближайшая больница?"
+    },
+    {
+      "english": "Please, hurry!",
+      "russian": "Пожалуйста, поторопитесь!"
+    },
+    {
+      "english": "I’ve been robbed.",
+      "russian": "Меня ограбили."
+    },
+    {
+      "english": "I’ve lost my passport.",
+      "russian": "Я потерял свой паспорт."
+    },
+    {
+      "english": "I feel sick.",
+      "russian": "Меня тошнит."
+    },
+    {
+      "english": "I need a pharmacy.",
+      "russian": "Мне нужна аптека."
+    },
+    {
+      "english": "Is there a doctor who speaks English?",
+      "russian": "Есть ли врач, говорящий по-английски?"
+    },
+    {
+      "english": "I’m having an allergic reaction.",
+      "russian": "У меня аллергическая реакция."
+    },
+    {
+      "english": "I need to contact my embassy.",
+      "russian": "Мне нужно связаться с моим посольством."
+    },
+    {
+      "english": "My phone was stolen.",
+      "russian": "У меня украли телефон."
+    },
+    {
+      "english": "Help! Fire!",
+      "russian": "Помогите! Пожар!"
+    },
+    {
+      "english": "There’s been a theft.",
+      "russian": "Произошла кража."
+    }
+  ]
+}

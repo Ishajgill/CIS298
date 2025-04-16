@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "english": "I need help!",
+      "german": "Ich brauche Hilfe!"
+    },
+    {
+      "english": "Call the police!",
+      "german": "Rufen Sie die Polizei!"
+    },
+    {
+      "english": "I need a doctor.",
+      "german": "Ich brauche einen Arzt."
+    },
+    {
+      "english": "There has been an accident.",
+      "german": "Es hat ein Unfall stattgefunden."
+    },
+    {
+      "english": "I am lost.",
+      "german": "Ich bin verloren."
+    },
+    {
+      "english": "Can you help me?",
+      "german": "Können Sie mir helfen?"
+    },
+    {
+      "english": "I don’t speak German.",
+      "german": "Ich spreche kein Deutsch."
+    },
+    {
+      "english": "Is everything okay?",
+      "german": "Ist alles in Ordnung?"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "german": "Wo ist das nächste Krankenhaus?"
+    },
+    {
+      "english": "Please, hurry!",
+      "german": "Bitte beeilen Sie sich!"
+    },
+    {
+      "english": "I’ve been robbed.",
+      "german": "Ich bin ausgeraubt worden."
+    },
+    {
+      "english": "I’ve lost my passport.",
+      "german": "Ich habe meinen Pass verloren."
+    },
+    {
+      "english": "I feel sick.",
+      "german": "Mir ist schlecht."
+    },
+    {
+      "english": "I need a pharmacy.",
+      "german": "Ich brauche eine Apotheke."
+    },
+    {
+      "english": "Is there a doctor who speaks English?",
+      "german": "Gibt es einen Arzt, der Englisch spricht?"
+    },
+    {
+      "english": "I’m having an allergic reaction.",
+      "german": "Ich habe eine allergische Reaktion."
+    },
+    {
+      "english": "I need to contact my embassy.",
+      "german": "Ich muss meine Botschaft kontaktieren."
+    },
+    {
+      "english": "My phone was stolen.",
+      "german": "Mein Telefon wurde gestohlen."
+    },
+    {
+      "english": "Help! Fire!",
+      "german": "Hilfe! Feuer!"
+    },
+    {
+      "english": "There’s been a theft.",
+      "german": "Es hat einen Diebstahl gegeben."
+    }
+  ]
+}

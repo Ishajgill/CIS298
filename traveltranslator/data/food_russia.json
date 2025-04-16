@@ -1,0 +1,32 @@
+{
+  "phrases": [
+    {
+      "english": "I would like a table for two, please.",
+      "russian": "Мне, пожалуйста, столик на двоих."
+    },
+    {
+      "english": "Can I see the menu?",
+      "russian": "Могу ли я увидеть меню?"
+    },
+    {
+      "english": "I am allergic to nuts.",
+      "russian": "У меня аллергия на орехи."
+    },
+    {
+      "english": "The food was delicious!",
+      "russian": "Еда была восхитительной!"
+    },
+    {
+      "english": "I would like the check please.",
+      "russian": "Я хотел бы получить чек, пожалуйста."
+    },
+    {
+      "english": "I am ready to order!",
+      "russian": "Я готов сделать заказ!"
+    },
+    {
+      "english": "How much does this cost?",
+      "russian": "Сколько это стоит?"
+    }
+  ]
+}
