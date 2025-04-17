@@ -11,7 +11,7 @@ class TravelTalkApp(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("Travel Talk Translator")
-        self.geometry("700x600")
+        self.geometry("700x680")
         self.resizable(False, False)
 
         # Appearance and Theme
@@ -142,19 +142,19 @@ class TravelTalkApp(ctk.CTk):
             self,
             text="\U0001F501 Translate Text",
             command=self.handle_custom_translation,
-            fg_color="#48CAE4",
+            fg_color="#007BFF",
             text_color="white",
             hover_color="#00B4D8"
         ).pack(pady=5)
 
-        self.voice_button = ctk.CTkButton(self, text="", command=self.handle_voice_translation, fg_color="#B388EB")
+        self.voice_button = ctk.CTkButton(self, text="", command=self.handle_voice_translation, fg_color="#007BFF")
         self.voice_button.pack(pady=5)
         # all the translations done so far
         ctk.CTkButton(
             self,
             text="\u2728 Show Translation Stats",
             command=self.show_translation_stats,
-            fg_color="#FFD166",
+            fg_color="#007BFF",
             text_color="white"
         ).pack(pady=5)
 
@@ -171,7 +171,7 @@ class TravelTalkApp(ctk.CTk):
                 ctk.set_appearance_mode(self.current_ld_mode)
                 self.Title.configure(text_color="#ffffff")
                 self.TAS.configure(text_color="#ffffff")
-        self.switch_mode = ctk.CTkButton(self, text="Light/Dark Mode", command=ld_mode, fg_color="#B388EB" )
+        self.switch_mode = ctk.CTkButton(self, text="🌗 Light/Dark Mode", command=ld_mode, fg_color="#007BFF" )
         self.switch_mode.pack(pady=5)
 
         self.update_voice_button_text()
@@ -180,7 +180,7 @@ class TravelTalkApp(ctk.CTk):
             self,
             text="\U0001F5D1 Clear Translation History",
             command=self.clear_translation_history,
-            fg_color="#EF476F",
+            fg_color="#007BFF",
             text_color="white",
             hover_color="#D64545"
         ).pack(pady=5)
