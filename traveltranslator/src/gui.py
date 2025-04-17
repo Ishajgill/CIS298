@@ -176,6 +176,22 @@ class TravelTalkApp(ctk.CTk):
 
         self.update_voice_button_text()
 
+        ctk.CTkButton(
+            self,
+            text="\U0001F5D1 Clear Translation History",
+            command=self.clear_translation_history,
+            fg_color="#EF476F",
+            text_color="white",
+            hover_color="#D64545"
+        ).pack(pady=5)
+
+    def clear_translation_history(self):
+        self.translation_counts.clear()
+        self.output_text.delete("1.0", "end")
+        self.output_text.insert("end", "Translation history has been cleared.\n")
+        self.after(2000, lambda: self.output_text.delete("1.0", "end"))  # clears after 2 seconds
+
+
     def swap_languages(self):
         from_lang = self.from_lang_var.get()
         to_lang = self.to_lang_var.get()
@@ -239,6 +255,7 @@ class TravelTalkApp(ctk.CTk):
         self.translation_counts[cleaned] += 1
         self.output_text.insert("end", f"You: {user_input}\n\U0001F501 Translated: {translated}\n\n")
         speak(translated, lang=target_lang)
+        self.input_entry.delete(0, "end")
 
     # Normalizes the speech (lowercased, punctuation removed, custom substitutions)
     def handle_voice_translation(self):
