@@ -15,7 +15,9 @@ class TravelTalkApp(ctk.CTk):
         self.resizable(False, False)
 
         # Appearance and Theme
-        ctk.set_appearance_mode("dark")
+        #made appearance status into variable to be switchable
+        self.current_ld_mode = "Dark"
+        ctk.set_appearance_mode(self.current_ld_mode)
         ctk.set_default_color_theme("green")
         # counting actual number times a word is spoken or typed
         self.translation_counts = defaultdict(int)
@@ -34,13 +36,14 @@ class TravelTalkApp(ctk.CTk):
             "Russia": "Russian"
         }
 
-        # Title
-        ctk.CTkLabel(
+        # Title - switched it to make it switchable via Light/Dark Mode button
+        self.Title = ctk.CTkLabel(
             self,
             text="\U0001F30D Personal Travel Talk/Text Translator",
             font=("Arial", 24, "bold"),
             text_color="#ffffff"
-        ).pack(pady=10)
+        )
+        self.Title.pack(pady=10)
 
         # Country + Category Toolbar
         toolbar_frame = ctk.CTkFrame(self, fg_color="transparent")
@@ -95,7 +98,8 @@ class TravelTalkApp(ctk.CTk):
         lang_frame = ctk.CTkFrame(self, fg_color="#444444")
         lang_frame.pack(pady=5)
 
-        ctk.CTkLabel(lang_frame, text="From:").pack(side="left", padx=(0, 5))
+        #set from color to manually to white
+        ctk.CTkLabel(lang_frame, text="From:", text_color="white").pack(side="left", padx=(0, 5))
         self.source_lang_menu = ctk.CTkOptionMenu(
             lang_frame, values=list(self.languages.keys()), variable=self.from_lang_var,
             command=lambda _: self.update_voice_button_text(),
@@ -115,7 +119,8 @@ class TravelTalkApp(ctk.CTk):
         )
         swap_button.pack(side="left", padx=5)
 
-        ctk.CTkLabel(lang_frame, text="To:").pack(side="left", padx=(20, 5))
+        #set To color manually to white
+        ctk.CTkLabel(lang_frame, text="To:", text_color="white").pack(side="left", padx=(20, 5))
         self.target_lang_menu = ctk.CTkOptionMenu(
             lang_frame, values=list(self.languages.keys()), variable=self.to_lang_var,
             command=lambda _: self.update_voice_button_text(),
@@ -126,7 +131,10 @@ class TravelTalkApp(ctk.CTk):
         self.output_text = ctk.CTkTextbox(self, width=600, height=200, fg_color="#F7FFF7", text_color="#000")
         self.output_text.pack(pady=10)
 
-        ctk.CTkLabel(self, text="Type any sentence:", text_color="#ffffff").pack()
+        #split Type any sentence configuration to be switchable via Light/Dark Mode button
+        self.TAS = ctk.CTkLabel(self, text="Type any sentence:", text_color="#ffffff")
+        self.TAS.pack()
+
         self.input_entry = ctk.CTkEntry(self, width=500, fg_color="white", text_color="black")
         self.input_entry.pack(pady=5)
 
@@ -149,6 +157,22 @@ class TravelTalkApp(ctk.CTk):
             fg_color="#FFD166",
             text_color="white"
         ).pack(pady=5)
+
+        #Light/Dark Mode button to switch UI Base colors
+        def ld_mode():
+            if self.current_ld_mode == "Dark":
+                self.current_ld_mode = "Light"
+                ctk.set_appearance_mode(self.current_ld_mode)
+                self.Title.configure(text_color="#000000")
+                self.TAS.configure(text_color="#000000")
+
+            else:
+                self.current_ld_mode = "Dark"
+                ctk.set_appearance_mode(self.current_ld_mode)
+                self.Title.configure(text_color="#ffffff")
+                self.TAS.configure(text_color="#ffffff")
+        self.switch_mode = ctk.CTkButton(self, text="Light/Dark Mode", command=ld_mode, fg_color="#B388EB" )
+        self.switch_mode.pack(pady=5)
 
         self.update_voice_button_text()
 
