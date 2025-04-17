@@ -1,0 +1,32 @@
+{
+  "phrases": [
+    {
+      "english": "I would like a table for two, please.",
+      "korean": "두 사람 자리 부탁해요."
+    },
+    {
+      "english": "Can I see the menu?",
+      "korean": "메뉴를 볼 수 있을까요?"
+    },
+    {
+      "english": "I am allergic to nuts.",
+      "korean": "저는 견과류 알레르기가 있어요."
+    },
+    {
+      "english": "The food was delicious!",
+      "korean": "음식이 정말 맛있었어요!"
+    },
+    {
+      "english": "I would like the check please.",
+      "korean": "계산서 부탁합니다."
+    },
+    {
+      "english": "I am ready to order!",
+      "korean": "주문할 준비가 되었어요!"
+    },
+    {
+      "english": "How much does this cost?",
+      "korean": "이거 얼마예요?"
+    }
+  ]
+}

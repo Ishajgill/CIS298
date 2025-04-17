@@ -28,12 +28,14 @@ class TravelTalkApp(ctk.CTk):
         }
         #Quick Phrase Tab
         self.country_to_lang = {
-            "Arabia": "Arabic",
+            "Arabic": "Arabic",
             "France": "French",
             "Germany": "German",
             "Italy": "Italian",
             "Mexico": "Spanish",
-            "Russia": "Russian"
+            "Russia": "Russian",
+            "Chinese": "Chinese",
+            "Korea": "Korean"
         }
 
         # Title - switched it to make it switchable via Light/Dark Mode button
@@ -144,7 +146,6 @@ class TravelTalkApp(ctk.CTk):
             command=self.handle_custom_translation,
             fg_color="#007BFF",
             text_color="white",
-            hover_color="#00B4D8"
         ).pack(pady=5)
 
         self.voice_button = ctk.CTkButton(self, text="", command=self.handle_voice_translation, fg_color="#007BFF")
@@ -182,7 +183,6 @@ class TravelTalkApp(ctk.CTk):
             command=self.clear_translation_history,
             fg_color="#007BFF",
             text_color="white",
-            hover_color="#D64545"
         ).pack(pady=5)
 
     def clear_translation_history(self):

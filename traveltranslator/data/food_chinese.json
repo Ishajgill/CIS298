@@ -1,0 +1,32 @@
+{
+  "phrases": [
+    {
+      "english": "I would like a table for two, please.",
+      "chinese": "请给我一张两人桌。"
+    },
+    {
+      "english": "Can I see the menu?",
+      "chinese": "可以给我看菜单吗？"
+    },
+    {
+      "english": "I am allergic to nuts.",
+      "chinese": "我对坚果过敏。"
+    },
+    {
+      "english": "The food was delicious!",
+      "chinese": "食物很美味！"
+    },
+    {
+      "english": "I would like the check please.",
+      "chinese": "请给我账单。"
+    },
+    {
+      "english": "I am ready to order!",
+      "chinese": "我准备好点菜了！"
+    },
+    {
+      "english": "How much does this cost?",
+      "chinese": "这个多少钱？"
+    }
+  ]
+}

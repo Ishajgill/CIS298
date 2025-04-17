@@ -1,0 +1,85 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "korean": "기차역이 어디에 있나요?"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "korean": "버스 정류장이 어디에 있나요?"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "korean": "공항에 어떻게 가나요?"
+    },
+    {
+      "english": "I need a taxi.",
+      "korean": "택시가 필요해요."
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "korean": "택시를 불러줄 수 있나요?"
+    },
+    {
+      "english": "How much is a ticket to Mexico City?",
+      "korean": "멕시코시티행 티켓은 얼마인가요?"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "korean": "티켓은 어디서 살 수 있나요?"
+    },
+    {
+      "english": "Is this seat taken?",
+      "korean": "이 자리는 비어 있나요?"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "korean": "다음 기차는 언제 도착하나요?"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "korean": "이 버스는 시내로 가나요?"
+    },
+    {
+      "english": "Which platform is it?",
+      "korean": "어느 플랫폼인가요?"
+    },
+    {
+      "english": "How long does the trip take?",
+      "korean": "여행은 얼마나 걸리나요?"
+    },
+    {
+      "english": "Turn left.",
+      "korean": "왼쪽으로 도세요."
+    },
+    {
+      "english": "Turn right.",
+      "korean": "오른쪽으로 도세요."
+    },
+    {
+      "english": "Go straight ahead.",
+      "korean": "직진하세요."
+    },
+    {
+      "english": "Stop here, please.",
+      "korean": "여기서 세워 주세요."
+    },
+    {
+      "english": "I missed my stop.",
+      "korean": "정거장을 놓쳤어요."
+    },
+    {
+      "english": "Is it far?",
+      "korean": "멀어요?"
+    },
+    {
+      "english": "Can I walk there?",
+      "korean": "걸어갈 수 있나요?"
+    },
+    {
+      "english": "Is there a map?",
+      "korean": "지도가 있나요?"
+    }
+  ]
+}
+

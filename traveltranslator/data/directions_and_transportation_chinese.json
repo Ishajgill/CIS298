@@ -1,0 +1,85 @@
+{
+  "phrases": [
+    {
+      "english": "Where is the train station?",
+      "chinese": "火车站在哪里？"
+    },
+    {
+      "english": "Where is the bus stop?",
+      "chinese": "公交车站在哪里？"
+    },
+    {
+      "english": "How do I get to the airport?",
+      "chinese": "我怎么去机场？"
+    },
+    {
+      "english": "I need a taxi.",
+      "chinese": "我需要一辆出租车。"
+    },
+    {
+      "english": "Can you call a taxi for me?",
+      "chinese": "你能帮我叫一辆出租车吗？"
+    },
+    {
+      "english": "How much is a ticket to Mexico City?",
+      "chinese": "去墨西哥城的票多少钱？"
+    },
+    {
+      "english": "Where can I buy a ticket?",
+      "chinese": "我在哪里可以买票？"
+    },
+    {
+      "english": "Is this seat taken?",
+      "chinese": "这个座位有人吗？"
+    },
+    {
+      "english": "When does the next train arrive?",
+      "chinese": "下一班火车什么时候到？"
+    },
+    {
+      "english": "Does this bus go to the city center?",
+      "chinese": "这辆车去市中心吗？"
+    },
+    {
+      "english": "Which platform is it?",
+      "chinese": "是哪个站台？"
+    },
+    {
+      "english": "How long does the trip take?",
+      "chinese": "这趟旅程需要多长时间？"
+    },
+    {
+      "english": "Turn left.",
+      "chinese": "向左转。"
+    },
+    {
+      "english": "Turn right.",
+      "chinese": "向右转。"
+    },
+    {
+      "english": "Go straight ahead.",
+      "chinese": "一直往前走。"
+    },
+    {
+      "english": "Stop here, please.",
+      "chinese": "请在这里停车。"
+    },
+    {
+      "english": "I missed my stop.",
+      "chinese": "我错过了下车的地方。"
+    },
+    {
+      "english": "Is it far?",
+      "chinese": "远吗？"
+    },
+    {
+      "english": "Can I walk there?",
+      "chinese": "我可以走路去吗？"
+    },
+    {
+      "english": "Is there a map?",
+      "chinese": "有地图吗？"
+    }
+  ]
+}
+

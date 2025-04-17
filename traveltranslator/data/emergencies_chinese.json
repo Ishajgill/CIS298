@@ -1,0 +1,85 @@
+{
+  "phrases": [
+    {
+      "english": "I need help!",
+      "chinese": "我需要帮助！"
+    },
+    {
+      "english": "Call the police!",
+      "chinese": "报警！"
+    },
+    {
+      "english": "I need a doctor.",
+      "chinese": "我需要医生。"
+    },
+    {
+      "english": "There has been an accident.",
+      "chinese": "发生了事故。"
+    },
+    {
+      "english": "I am lost.",
+      "chinese": "我迷路了。"
+    },
+    {
+      "english": "Can you help me?",
+      "chinese": "你能帮我吗？"
+    },
+    {
+      "english": "I don’t speak Arabic.",
+      "chinese": "我不会说阿拉伯语。"
+    },
+    {
+      "english": "Is everything okay?",
+      "chinese": "一切还好吗？"
+    },
+    {
+      "english": "Where is the nearest hospital?",
+      "chinese": "最近的医院在哪里？"
+    },
+    {
+      "english": "Please, hurry!",
+      "chinese": "请快点！"
+    },
+    {
+      "english": "I’ve been robbed.",
+      "chinese": "我被抢劫了。"
+    },
+    {
+      "english": "I’ve lost my passport.",
+      "chinese": "我丢了护照。"
+    },
+    {
+      "english": "I feel sick.",
+      "chinese": "我感觉不舒服。"
+    },
+    {
+      "english": "I need a pharmacy.",
+      "chinese": "我需要药店。"
+    },
+    {
+      "english": "Is there a doctor who speaks English?",
+      "chinese": "有讲英语的医生吗？"
+    },
+    {
+      "english": "I’m having an allergic reaction.",
+      "chinese": "我有过敏反应。"
+    },
+    {
+      "english": "I need to contact my embassy.",
+      "chinese": "我需要联系我的大使馆。"
+    },
+    {
+      "english": "My phone was stolen.",
+      "chinese": "我的手机被偷了。"
+    },
+    {
+      "english": "Help! Fire!",
+      "chinese": "救命！着火了！"
+    },
+    {
+      "english": "There’s been a theft.",
+      "chinese": "发生了盗窃。"
+    }
+  ]
+}
+
