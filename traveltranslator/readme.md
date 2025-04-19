@@ -1,6 +1,6 @@
 # 🌍 Travel Talk Translator
 
-Travel Talk Translator is a desktop application built using Python and `customtkinter` to assist travelers in translating text and speech between multiple languages. The app includes preloaded travel phrases by category, real-time speech recognition, text-to-speech, and translation history tracking.
+Travel Talk Translator is a desktop application built using Python and customtkinter to assist travelers in translating text and speech between multiple languages. The app includes preloaded travel phrases by category, real-time speech recognition, text-to-speech, and translation history tracking.
 
 ## 🔄 Running Log of Features
 
