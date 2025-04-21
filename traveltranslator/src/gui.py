@@ -28,7 +28,7 @@ class TravelTalkApp(ctk.CTk):
        }
        #Quick Phrase Tab
        self.country_to_lang = {
-           "Arabic": "Arabic",
+           "Yemen": "Arabic",
            "France": "French",
            "Germany": "German",
            "Italy": "Italian",
@@ -51,7 +51,7 @@ class TravelTalkApp(ctk.CTk):
        toolbar_frame = ctk.CTkFrame(self, fg_color="transparent")
        toolbar_frame.pack(pady=10)
 
-       self.country_var = ctk.StringVar(value="Mexico")
+       self.country_var = ctk.StringVar(value="Country")
        self.country_var.trace("w", self.sync_language_with_country)
        ctk.CTkOptionMenu(
            toolbar_frame,
