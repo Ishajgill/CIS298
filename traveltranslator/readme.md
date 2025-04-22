@@ -13,10 +13,10 @@ Travel Talk Translator is a desktop application built using Python and customtki
 | Added language swapping functionality |
 | Enabled light/dark mode toggle |
 | Implemented "Clear Translation History" button |
-| Added more languages to JSON configuration files |
+| Added languages to JSON configuration files (Isha, Edwin, Nabilah) |
 | Fixed issue where new input overwrote translation output without reset |
 | Linked translation stats using Counter to track phrase frequency |
-| Improved layout and spacing of UI elements for better usability |
+| Improved layout and spacing of UI elements for better usability (Isha, Edwin, Nabilah) |
 
 
 ![img_2.png](img_2.png)
