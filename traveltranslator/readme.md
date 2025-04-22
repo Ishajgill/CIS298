@@ -19,4 +19,4 @@ Travel Talk Translator is a desktop application built using Python and customtki
 | Improved layout and spacing of UI elements for better usability (Isha, Edwin, Nabilah) |
 
 
-![img_2.png](img_2.png)
+![image](https://github.com/user-attachments/assets/e837f65b-284d-42f7-8a73-88258fcc7ed3)
